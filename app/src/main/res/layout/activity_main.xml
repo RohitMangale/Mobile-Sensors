@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/almendra"
+            android:padding="5dp"
+            android:text="Sensors"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corn"
+            android:elevation="10dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/Gyro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="Gyro"
+                android:textSize="35dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/GyroX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Gyro"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="x9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+            <TextView
+                android:id="@+id/GyroY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/GyroX"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="y9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="95dp" />
+
+            <TextView
+                android:id="@+id/GyroZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/GyroY"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="z9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corn"
+            android:elevation="10dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/Accelero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="Accelero"
+                android:textSize="35dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/AcceleroX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Accelero"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="x9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+            <TextView
+                android:id="@+id/AcceleroY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AcceleroX"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="y9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="95dp" />
+
+            <TextView
+                android:id="@+id/AcceleroZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AcceleroY"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="z9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corn"
+            android:elevation="10dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/Leivathan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="Light"
+                android:textSize="35dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/LeivathanX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Leivathan"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="x9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/LeivathanY"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/LeivathanX"-->
+            <!--                android:layout_marginLeft="50dp"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:fontFamily="@font/akaya_telivigala"-->
+            <!--                android:includeFontPadding="false"-->
+            <!--                android:text="y9:"-->
+            <!--                android:textSize="20dp"-->
+            <!--                tools:layout_editor_absoluteX="52dp"-->
+            <!--                tools:layout_editor_absoluteY="95dp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/LeivathanZ"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/LeivathanY"-->
+            <!--                android:layout_marginLeft="50dp"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:fontFamily="@font/akaya_telivigala"-->
+            <!--                android:includeFontPadding="false"-->
+            <!--                android:text="z9:"-->
+            <!--                android:textSize="20dp"-->
+            <!--                tools:layout_editor_absoluteX="52dp"-->
+            <!--                tools:layout_editor_absoluteY="129dp" />-->
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corn"
+            android:elevation="10dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/Proximity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="Proximity"
+                android:textSize="35dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/ProximityX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Proximity"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="x9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corn"
+            android:elevation="10dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/Groove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="Gravity"
+                android:textSize="35dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/GrooveX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Groove"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="x9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+            <TextView
+                android:id="@+id/GrooveY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/GrooveX"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="y9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="95dp" />
+
+            <TextView
+                android:id="@+id/GrooveZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/GrooveY"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="z9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corn"
+            android:elevation="10dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/Magneto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="Magnetic Field"
+                android:textSize="35dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/MagnetoX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Magneto"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="x9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+            <TextView
+                android:id="@+id/MagnetoY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MagnetoX"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="y9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="95dp" />
+
+            <TextView
+                android:id="@+id/MagnetoZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MagnetoY"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="z9:"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
